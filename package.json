@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlbertLnz/node-prisma-api.git"
+    "url": "git+https://github.com/AlbertLnz/node-prisma-sqlite-api"
   },
   "keywords": [
     "NodeJS",
@@ -20,9 +20,9 @@
   "author": "AlbertLnz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlbertLnz/node-prisma-api/issues"
+    "url": "https://github.com/AlbertLnz/node-prisma-sqlite-api/issues"
   },
-  "homepage": "https://github.com/AlbertLnz/node-prisma-api#readme",
+  "homepage": "https://github.com/AlbertLnz/node-prisma-sqlite-api#readme",
   "devDependencies": {
     "prisma": "^5.9.1"
   },
