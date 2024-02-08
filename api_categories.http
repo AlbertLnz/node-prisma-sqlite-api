@@ -1,0 +1,7 @@
+#########
+### GET: List all categories
+GET http://localhost:3000/api/categories
+
+#########
+### GET: List all categories including data from Products
+GET http://localhost:3000/api/categories_include
