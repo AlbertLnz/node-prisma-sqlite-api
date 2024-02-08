@@ -1,0 +1,24 @@
+{
+  "name": "prisma-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlbertLnz/node-prisma-api.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Prisma",
+    "RestAPI"
+  ],
+  "author": "AlbertLnz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlbertLnz/node-prisma-api/issues"
+  },
+  "homepage": "https://github.com/AlbertLnz/node-prisma-api#readme"
+}
