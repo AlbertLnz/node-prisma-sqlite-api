@@ -9,4 +9,14 @@ router.get('/products', async (_req, res) => {
   res.json(products)
 })
 
+router.post('/products', async (req, res) => {
+  const data = req.body
+
+  const newProduct = await prisma.product.create({
+    data: data
+  })
+
+  res.json(newProduct)
+})
+
 export default router

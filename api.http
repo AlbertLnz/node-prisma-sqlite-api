@@ -1,0 +1,10 @@
+### POST: Create 1 product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+  "name": "Laptop Lenovo",
+  "price": 1000,
+  "stock": 30,
+  "categoryId": 1
+}
