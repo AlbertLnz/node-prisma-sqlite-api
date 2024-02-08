@@ -18,4 +18,16 @@ router.post('/products', async (req, res) => {
   res.json(newProduct)
 })
 
+router.get('/products/:id', async (req, res) => {
+  const paramId = req.params.id
+  
+  const product = await prisma.product.findFirst({
+    where: {
+      id: Number(paramId) // id: Number(paramId) === id: +paramId === id: parseInt(paramId)
+    }
+  })
+
+  return res.json(product)
+})
+
 export default router
