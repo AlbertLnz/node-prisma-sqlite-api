@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/AlbertLnz/node-prisma-api/issues"
   },
-  "homepage": "https://github.com/AlbertLnz/node-prisma-api#readme"
+  "homepage": "https://github.com/AlbertLnz/node-prisma-api#readme",
+  "devDependencies": {
+    "prisma": "^5.9.1"
+  }
 }
