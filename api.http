@@ -13,3 +13,13 @@ Content-Type: application/json
 
 ### DELETE: Delete 1 product by his id
 DELETE http://localhost:3000/api/products/1
+
+#########
+
+### PUT: Update 1 product by his id
+PUT http://localhost:3000/api/products/4
+Content-Type: application/json
+
+{
+    "price": 900
+}

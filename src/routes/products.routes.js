@@ -38,7 +38,7 @@ router.delete('/products/:id', async (req, res) => {
   try {
     const productToDelete = await prisma.product.delete({
       where: {
-        id: Number(paramId) // id: Number(paramId) === id: +paramId === id: parseInt(paramId)
+        id: parseInt(paramId) // id: Number(paramId) === id: +paramId === id: parseInt(paramId)
       }
     })  
     return res.json(productToDelete)
@@ -46,6 +46,19 @@ router.delete('/products/:id', async (req, res) => {
   } catch (error) {
     return res.status(404).json({ error: '404 - Not Found' })
   }
+})
+
+router.put('/products/:id', async (req, res) => {
+  const paramId = req.params.id
+  
+  const productUpdated = await prisma.product.update({
+    where: {
+      id: +paramId // id: Number(paramId) === id: +paramId === id: parseInt(paramId)
+    },
+    data: req.body
+  })
+
+  return res.json(productUpdated)
 })
 
 
