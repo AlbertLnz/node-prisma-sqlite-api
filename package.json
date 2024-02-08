@@ -23,5 +23,8 @@
   "homepage": "https://github.com/AlbertLnz/node-prisma-api#readme",
   "devDependencies": {
     "prisma": "^5.9.1"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.9.1"
   }
 }
