@@ -32,6 +32,23 @@ router.get('/products/:id', async (req, res) => {
   return res.json(product)
 })
 
+router.get('/products_include/:id', async (req, res) => {
+  const paramId = req.params.id
+  
+  const product = await prisma.product.findFirst({
+    where: {
+      id: Number(paramId) // id: Number(paramId) === id: +paramId === id: parseInt(paramId)
+    },
+    include: {
+      category: true
+    }
+  })
+
+  if(!product) return res.status(404).json({ error: '404 - Not Found' })
+
+  return res.json(product)
+})
+
 router.delete('/products/:id', async (req, res) => {
   const paramId = req.params.id
   
