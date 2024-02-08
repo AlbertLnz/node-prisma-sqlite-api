@@ -1,7 +1,12 @@
 import { Router } from "express";
+import { prisma } from "../db.js";
 
 const router = Router()
 
-// CATEGORIES REQUESTS
+router.get('/categories', async (_req, res) => {
+  const categories = await prisma.category.findMany()
+
+  res.json(categories)
+})
 
 export default router
