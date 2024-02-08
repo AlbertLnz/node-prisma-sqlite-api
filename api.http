@@ -1,3 +1,16 @@
+#########
+### GET: List all products
+GET http://localhost:3000/api/products
+
+#########
+### GET: List 1 products by his id
+GET http://localhost:3000/api/products/4
+
+#########
+### GET: List 1 products by his id (including Category data [include method])
+GET http://localhost:3000/api/products_include/4
+
+#########
 ### POST: Create 1 product
 POST http://localhost:3000/api/products
 Content-Type: application/json
@@ -10,12 +23,10 @@ Content-Type: application/json
 }
 
 #########
-
 ### DELETE: Delete 1 product by his id
 DELETE http://localhost:3000/api/products/1
 
 #########
-
 ### PUT: Update 1 product by his id
 PUT http://localhost:3000/api/products/4
 Content-Type: application/json
